@@ -1,0 +1,12 @@
+Lab 1 - Group A
+Introduction to SIC Programs
+
+Objectives:
+- Assembling SIC Examples to see the memory usages and Object Code
+
+Tools Required:
+- Java installed and path set to /bin
+download JDK from 
+http://192.168.0.2/~jhalak/Files/Softwares/Lab%20Apps/
+
+- SIC Simulator
