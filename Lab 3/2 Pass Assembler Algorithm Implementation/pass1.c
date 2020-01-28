@@ -41,15 +41,23 @@ void main()
      strcpy(code[i],mnemonic[j]);
      j++;
     }
+
+    /* implement this from pass 1 algorithm
+
+      if opcode = 'WORD' then
+        add 3 to locctr
+      else if opcode = RESW then
+        add 3 * #[Operand] to locctr
+      else if opcode = RESB then
+        add #operand to locctr
+      else  if opecode = byte then
+        begin
+          find length of constant in bytes
+          add length to locctr
+        end
+
+    */
     
-   if(strcmp(opcode,"WORD")==0)
-    locctr+=3;
-   else if(strcmp(opcode,"RESW")==0)
-    locctr+=(3*(atoi(operand)));
-   else if(strcmp(opcode,"RESB")==0)
-    locctr+=(atoi(operand));
-   else if(strcmp(opcode,"BYTE")==0)
-    ++locctr;
     
    fprintf(fp3,"\t%s\t%s\t%s\n",label,opcode,operand);
    fscanf(fp1,"%s%s%s",label,opcode,operand);
